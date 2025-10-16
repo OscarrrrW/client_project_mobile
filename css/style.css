@@ -1,0 +1,360 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica;
+    background-color: #F7F7F7;
+    color: #212121;
+    line-height: 1.5;
+    max-width: 430px;      
+    margin: 0 auto;
+    
+}
+
+h1, h2, h3 {
+    color: #00274C;
+    font-weight: 700;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    background-color: #00274C;
+    color: #FFCB05;
+    margin-left: -50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1.1rem; }
+p, li { font-size: 1rem; color: #333; }
+
+
+header > a[href^="#"] {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #FFCB05;
+    color: #00274C;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: top 0.3s ease;
+}
+header > a[href^="#"]:focus {
+    top: 10px; 
+}
+
+header {
+    background-color: #00274C;
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+header h1 {
+    color: #FFCB05;
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.8rem; 
+    width: 95%; 
+    justify-content: center; 
+}
+  
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 14px;
+    padding: 10px;
+    height: 50px; 
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+  
+  
+
+
+nav a:hover, nav a:focus {
+    background-color: #ffd633;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 1.2rem;
+}
+section {
+    padding: 1rem;
+}
+
+
+
+
+ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+section ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.5rem;
+}
+section ul li {
+    background: #F7F7F7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0.6rem;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+section ul li a {
+    display: block;
+    margin-top: 0.3rem;
+    color: #00274C;
+    font-weight: 600;
+}
+
+
+section div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0.8rem;
+    align-items: start;
+}
+
+
+iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.firstsect p {
+    margin-bottom: 30px;
+    
+}
+
+section.reasons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+    width: 100%;
+}
+  
+section.reasons ul li {
+    background-color: #00274C;
+    color: #ffd633;
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.split.net p{
+    background-color: #00274C;
+    color: white;
+    border: none;
+    border-radius: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    border-radius: 15px;
+}
+
+.split.res ul{
+    margin-bottom: 3rem;
+}
+
+.split.res p{
+    text-align: center;
+}
+
+.faq ul{
+    display: block;
+}
+
+.faq ul li{
+    margin-bottom: 1rem;
+    border:#00274C;
+    border-style: double;
+}
+
+.faq ul li strong{
+    font-weight: bold;
+}
+
+section.reasons ul li:nth-child(1) { grid-column: 1 / span 4; }
+section.reasons ul li:nth-child(2) { grid-column: 2 / span 4; }
+section.reasons ul li:nth-child(3) { grid-column: 1 / span 4; }
+section.reasons ul li:nth-child(4) { grid-column: 2 / span 4; }
+section.reasons ul li:nth-child(5) { grid-column: 1 / span 4; }
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.split {
+    display: block;
+    margin-bottom: 3rem;
+
+}
+
+.split img{
+    border-radius: 0;
+    width: 100%;
+
+}
+
+.split ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.8rem; 
+    width: 100%; 
+    justify-content: center; 
+
+}
+
+.split li{
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.split a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 14px;
+    padding: 10px;
+    height: 50px; 
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.net ul{
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.reasons.net ul li {
+    font-weight: 400; 
+    color: #FFFFFF;
+}
+
+.reasons.net ul li strong {
+    color: #FFCB05;            
+    font-weight: 700;           
+    display: block;             
+    margin-bottom: 0.4rem;
+  }
+
+.popular {
+    display: block;
+}
+
+.popular ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.popular ul li:nth-child(1) { grid-column: 1 / span 5; }
+.popular ul li:nth-child(2) { grid-column: 2 / span 4; }
+.popular ul li:nth-child(3) { grid-column: 1 / span 4; }
+.popular ul li:nth-child(4) { grid-column: 2 / span 4; }
+.popular ul li:nth-child(5) { grid-column: 1 / span 5; }
+
+.popular ul li a {
+    display: block;   
+    text-decoration: underline;   
+    color: #00274C;         
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 0.3rem;
+}
+  
+
+footer {
+    background-color: #00274C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+footer a {
+    color: #FFCB05;
+    text-decoration: none;
+    font-weight: 600;
+    display:block;
+}
+
+footer p {
+    color: white;
+}
+
+
+a:focus-visible {
+    outline: 3px solid #FFCB05;
+    outline-offset: 2px;
+    border-radius: 6px;
+}
